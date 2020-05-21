@@ -1,56 +1,52 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const axios = require("axios");
+const writeToFile = require("write-to-file");
+const markdown = require("./utils/generateMarkdown.js");
 
-inquirer
-  .prompt([
-    {
-      type: "input",
-      message: "Project title:",
-      name: "title",
-    },
-    {
-      type: "input",
-      message: "Project description:",
-      name: "password",
-    },
-    {
-      type: "input",
-      message: "Installation:",
-      name: "installation",
-    },
-    {
-      type: "input",
-      message: "Usage:",
-      name: "usage",
-    },
-    {
-      type: "input",
-      message: "License:",
-      name: "license",
-    },
-    {
-      type: "input",
-      message: "Contributing:",
-      name: "contributing",
-    },
-    {
-      type: "input",
-      message: "Tests:",
-      name: "tests",
-    },
-  ])
-  .then(function (response) {
-    console.log(`Title: ${response.title}`);
-  });
+// command line prompts
+const questions = [
+  "Github Username:",
+  "Project Title:",
+  "Deployed page url:",
+  "Project description:",
+  "Installation:",
+  "Usage:",
+  "License:",
+  "Contributing:",
+  "Tests:",
+];
 
-// const questions = [
+let prompts = [];
 
-// ];
+// contructor function to create prompt object for each question
+const Prompt = function (question) {
+  (this.type = "input"),
+    (this.message = question),
+    (this.name = this.message.split(" ").splice(-1).toString().toLowerCase());
+};
 
-// function writeToFile(fileName, data) {
-// }
+// generates an array of prompt objects to pass into inquirer
+for (i = 0; i < questions.length; i++) {
+  prompts[i] = new Prompt(questions[i]);
+  prompts[i].name = prompts[i].name.substring(0, prompts[i].name.length - 1);
+}
 
-// function init() {
+// command line prompts
+inquirer.prompt(prompts).then(function (response) {
+  let data = markdown(response);
 
-// }
+  (async () => {
+    try {
+      await writeToFile("README.md", data);
+    } catch (error) {
+      console.error(error.message);
+    }
+  })();
+});
 
-// init();
+// // function init() {
+
+// // }
+
+// // init();
