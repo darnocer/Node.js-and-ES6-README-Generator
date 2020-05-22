@@ -6,8 +6,9 @@ const markdown = require("./utils/generateMarkdown.js");
 
 // command line prompts
 const questions = [
-  "Github Username:",
-  "Project Title:",
+  "Enter your email:",
+  "Enter your Github username:",
+  "Project title:",
   "Deployed page url:",
   "Project description:",
   "Installation:",
@@ -15,6 +16,7 @@ const questions = [
   "License:",
   "Contributing:",
   "Tests:",
+  "Questions?",
 ];
 
 let prompts = [];
@@ -35,6 +37,19 @@ for (i = 0; i < questions.length; i++) {
 // command line prompts
 inquirer.prompt(prompts).then(function (response) {
   let data = markdown(response);
+  console.log(response);
+
+  // get github picture and email based on username
+
+  // let gitInfo;
+  // const queryUrl = `https://api.github.com/users/${data.username}`;
+  // axios.get(queryUrl).then(function (response) {
+  //   gitInfo = {
+  //     image: response.data.avatar_url,
+  //     email: response.data.email,
+  //   };
+  // });
+  // console.log(gitInfo); // returns undefined
 
   (async () => {
     try {
@@ -44,9 +59,3 @@ inquirer.prompt(prompts).then(function (response) {
     }
   })();
 });
-
-// // function init() {
-
-// // }
-
-// // init();
