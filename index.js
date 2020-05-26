@@ -53,7 +53,7 @@ inquirer.prompt(prompts).then(function (response) {
 
   (async () => {
     try {
-      await writeToFile("READMEdemo.md", data);
+      await writeToFile("README.md", data);
       await console.log(`${checkmark}  README.md successfully created!`);
     } catch (error) {
       console.error(error.message);
