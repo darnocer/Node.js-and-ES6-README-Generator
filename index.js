@@ -6,6 +6,7 @@ const markdown = require("./utils/generateMarkdown.js");
 
 // command line prompts
 const questions = [
+  "Enter your full name:",
   "Enter your email:",
   "Enter your Github username:",
   "Enter the Github repo:",
@@ -16,6 +17,7 @@ const questions = [
   "Usage:",
   "Credits:",
   "Tests:",
+  "Enter your license:",
 ];
 
 let prompts = [];
@@ -50,6 +52,7 @@ inquirer.prompt(prompts).then(function (response) {
   (async () => {
     try {
       await writeToFile("READMETEST.md", data);
+      await console.log("README.md successfully created!");
     } catch (error) {
       console.error(error.message);
     }

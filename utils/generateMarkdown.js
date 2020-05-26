@@ -11,14 +11,10 @@ function generateMarkdown(data) {
 
   ## Description
 
-  ---
-
   ${data.description}
 
 
   ## Table of Contents
-
-  ---
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -28,36 +24,34 @@ function generateMarkdown(data) {
   
   ## Installation
 
-  ---
-
  \`${data.installation}\`
  
   ## Usage
 
-  ---
-
-
   ## Credits
-
-  ---
 
   ${data.credits}
   
   ## Tests
   
-  ---
-  
   ${data.tests}
 
   ## Questions?
 
-  ---
-  
   Contact me at [${data.email}](mailto:${data.email}) 
   
   or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
 
-  `;
+
+
+## License
+
+Copyright © 2020 [${data.name}](http://www.github.com/${data.username})
+
+
+This project is [${data.license}](https://github.com/${data.username}/${data.repo}/blob/master/LICENSE.txt) Licensed
+
+`;
 }
 
 module.exports = generateMarkdown;
