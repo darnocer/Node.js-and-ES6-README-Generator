@@ -14,9 +14,8 @@ const questions = [
   "Installation:",
   "Usage:",
   "License:",
-  "Contributing:",
+  "Credits:",
   "Tests:",
-  "Questions?",
 ];
 
 let prompts = [];
@@ -38,18 +37,6 @@ for (i = 0; i < questions.length; i++) {
 inquirer.prompt(prompts).then(function (response) {
   let data = markdown(response);
   console.log(response);
-
-  // get github picture and email based on username
-
-  // let gitInfo;
-  // const queryUrl = `https://api.github.com/users/${data.username}`;
-  // axios.get(queryUrl).then(function (response) {
-  //   gitInfo = {
-  //     image: response.data.avatar_url,
-  //     email: response.data.email,
-  //   };
-  // });
-  // console.log(gitInfo); // returns undefined
 
   (async () => {
     try {

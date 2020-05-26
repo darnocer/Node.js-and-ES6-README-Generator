@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   
   ## Installation
   ${data.installation}
-  
+
   ## License
   ${data.license}
   
@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions?
-  Contact me at [mailto:${data.email}](${data.email}) or follow me on [www.github.com/${data.username}](Gihub)
+  Contact me at [${data.email}](mailto:${data.email}) or follow me on [www.github.com/${data.username}](Github)
 
   `;
 
