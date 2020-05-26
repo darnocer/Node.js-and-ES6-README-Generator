@@ -18,7 +18,7 @@ function generateMarkdown(data) {
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
+  * [Credits](#Credits)
   * [Tests](#tests)
   * [Questions](#questions)
   
@@ -27,6 +27,7 @@ function generateMarkdown(data) {
  \`${data.installation}\`
  
   ## Usage
+  ${data.usage}
 
   ## Credits
 
@@ -45,6 +46,10 @@ function generateMarkdown(data) {
 
 
 Copyright © 2020 [${data.name}](http://www.github.com/${data.username})
+
+---
+
+##### _Created with [darnocer's README generator](https://github.com/darnocer/Node.js-and-ES6-README-Generator)_ 👽
 
 `;
 }

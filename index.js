@@ -2,7 +2,12 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 const writeToFile = require("write-to-file");
+const emoji = require("node-emoji");
 const markdown = require("./utils/generateMarkdown.js");
+const github = require("./utils/github.js");
+
+// emojis
+const checkmark = emoji.get("heavy_check_mark");
 
 // command line prompts
 const questions = [
@@ -45,14 +50,11 @@ for (i = 0; i < questions.length; i++) {
 // command line prompts
 inquirer.prompt(prompts).then(function (response) {
   let data = markdown(response);
-  console.log(response);
-
-  // update back from TEST
 
   (async () => {
     try {
-      await writeToFile("READMETEST.md", data);
-      await console.log("README.md successfully created!");
+      await writeToFile("READMEdemo.md", data);
+      await console.log(`${checkmark}  README.md successfully created!`);
     } catch (error) {
       console.error(error.message);
     }

@@ -11,17 +11,21 @@ This generator provides the structure and formatting; all you have to provide is
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Credits](#credits)
 - [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 
+`npm i`
+
 `node index.js`
 
 ## Usage
 
-Coming Soon
+- After installation, follow the command line prompts to fill out information needed to automatically generate a README file for your project:
+
+![demogif](images/readmedemo.gif)
 
 ## Tests
 
