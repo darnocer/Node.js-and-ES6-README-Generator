@@ -8,6 +8,7 @@ const markdown = require("./utils/generateMarkdown.js");
 const questions = [
   "Enter your email:",
   "Enter your Github username:",
+  "Enter the Github repo:",
   "Project title:",
   "Deployed page url:",
   "Project description:",

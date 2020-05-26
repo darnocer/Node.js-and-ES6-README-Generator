@@ -4,7 +4,7 @@ const writeToFile = require("write-to-file");
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ![license badge](https://img.shields.io/github/license/darnocer/Node.js-and-ES6-README-Generator?style=flat-square)
+  ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square) ![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
   
   ### URL: ${data.url}
   
@@ -30,7 +30,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions?
-  Contact me at [${data.email}](mailto:${data.email}) or follow me on [Github](www.github.com/${data.username})
+  Contact me at [${data.email}](mailto:${data.email}) 
+  
+  or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
 
   `;
 }

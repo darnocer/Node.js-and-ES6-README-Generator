@@ -1,6 +1,6 @@
 # README Generator
 
-![license badge](https://img.shields.io/github/license/darnocer/Node.js-and-ES6-README-Generator?style=flat-square)
+![last commit](https://img.shields.io/github/last-commit/darnocer/Node.js-and-ES6-README-Generator?style=flat-square) ![license badge](https://img.shields.io/github/license/darnocer/Node.js-and-ES6-README-Generator?style=flat-square)
 
 ## Description
 
@@ -29,4 +29,6 @@ Coming Soon
 
 ## Questions?
 
-Contact me at [darian.nocera26@gmail.com](mailto:darian.nocera26@gmail.com) or follow me on [Github](https://github.com/darnocer)
+Contact me at [darian.nocera26@gmail.com](mailto:darian.nocera26@gmail.com)
+
+or [![Follow on Github](https://img.shields.io/github/followers/darnocer?label=Follow&style=social)](http://www.github.com/darnocer)
