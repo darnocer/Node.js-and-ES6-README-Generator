@@ -44,12 +44,7 @@ function generateMarkdown(data) {
 
 
 
-## License
-
 Copyright © 2020 [${data.name}](http://www.github.com/${data.username})
-
-
-This project is [${data.license}](https://github.com/${data.username}/${data.repo}/blob/master/LICENSE.txt) Licensed
 
 `;
 }
