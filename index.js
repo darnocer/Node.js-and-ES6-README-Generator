@@ -25,6 +25,13 @@ const Prompt = function (question) {
   (this.type = "input"),
     (this.message = question),
     (this.name = this.message.split(" ").splice(-1).toString().toLowerCase());
+  this.validate = function (value) {
+    if (value.length) {
+      return true;
+    } else {
+      return "Input required";
+    }
+  };
 };
 
 // generates an array of prompt objects to pass into inquirer
