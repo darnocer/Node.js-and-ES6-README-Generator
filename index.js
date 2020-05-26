@@ -13,7 +13,6 @@ const questions = [
   "Project description:",
   "Installation:",
   "Usage:",
-  "License:",
   "Credits:",
   "Tests:",
 ];
@@ -38,9 +37,11 @@ inquirer.prompt(prompts).then(function (response) {
   let data = markdown(response);
   console.log(response);
 
+  // update back from TEST
+
   (async () => {
     try {
-      await writeToFile("README.md", data);
+      await writeToFile("READMETEST.md", data);
     } catch (error) {
       console.error(error.message);
     }

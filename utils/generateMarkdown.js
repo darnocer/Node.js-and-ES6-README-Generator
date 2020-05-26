@@ -3,9 +3,10 @@ const writeToFile = require("write-to-file");
 
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ![license badge](https://img.shields.io/github/license/darnocer/Node.js-and-ES6-README-Generator?style=flat-square)
   
-  ## URL
-  ${data.url}
+  ### URL: ${data.url}
   
   ## Description
   ${data.description}
@@ -13,29 +14,25 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
   ## Installation
-  ${data.installation}
+ \`${data.installation}\`
+ 
+  ## Usage
 
-  ## License
-  ${data.license}
-  
-  ## Contributing
-  ${data.contributing}
+  ## Credits
+  ${data.credits}
   
   ## Tests
   ${data.tests}
 
   ## Questions?
-  Contact me at [${data.email}](mailto:${data.email}) or follow me on [www.github.com/${data.username}](Github)
+  Contact me at [${data.email}](mailto:${data.email}) or follow me on [Github](www.github.com/${data.username})
 
   `;
-
-  // writeToFile("README.md", readME);
 }
 
 module.exports = generateMarkdown;
