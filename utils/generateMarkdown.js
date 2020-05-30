@@ -1,7 +1,11 @@
 const axios = require("axios");
 const writeToFile = require("write-to-file");
+const generateCredits = require("./credits.js");
 
 function generateMarkdown(data) {
+  let credits = data.credits;
+  let links = generateCredits(credits);
+
   return `# ${data.title}
 
   ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square) ![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
@@ -30,8 +34,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Credits
-
-  ${data.credits}
+  ${links}
   
   ## Tests
   
