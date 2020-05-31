@@ -5,48 +5,55 @@ const generateCredits = require("./credits.js");
 function generateMarkdown(data) {
   let credits = data.credits;
   let links = generateCredits(credits);
+  console.log(links);
 
   return `# ${data.title}
 
-  ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square) ![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
+![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square) ![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
 
 
-  ### URL: ${data.url}
+### URL: ${data.url}
 
-  ## Description
+## Description
 
-  ${data.description}
-
-
-  ## Table of Contents
-
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Credits](#Credits)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation
-
- \`${data.installation}\`
- 
-  ## Usage
-  ${data.usage}
-
-  ## Credits
-  ${links}
-  
-  ## Tests
-  
-  ${data.tests}
-
-  ## Questions?
-
-  Contact me at [${data.email}](mailto:${data.email}) 
-  
-  or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
+${data.description}
 
 
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#Credits)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+## Installation
+
+\`${data.installation}\`
+
+
+## Usage
+
+${data.usage}
+
+
+## Credits
+
+${links}
+
+
+
+## Tests
+
+${data.tests}
+
+
+## Questions?
+
+Contact me at [${data.email}](mailto:${data.email}) 
+
+or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
 
 Copyright © 2020 [${data.name}](http://www.github.com/${data.username})
 

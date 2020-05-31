@@ -27,6 +27,16 @@ This generator provides the structure and formatting; all you have to provide is
 
 ![demogif](images/readmedemo.gif)
 
+### Features
+
+- **Credits** - Enter a comma-delimited list of credits. Support to automatically generate links is available for the following libraries/modules: inquirer, bootstrap, jest, font awesome, moments.js
+
+## Credits
+
+- [Inquirer](https://www.npmjs.com/package/inquirer)
+- [write-to-file](https://www.npmjs.com/package/write-to-file)
+- [Badges](https://shields.io/)
+
 ## Tests
 
 Coming Soon

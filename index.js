@@ -20,7 +20,7 @@ const questions = [
   "Project description:",
   "Installation:",
   "Usage:",
-  "Credits:",
+  "(comma-delimited) Credits:",
   "Tests:",
   "Enter your license:",
 ];
