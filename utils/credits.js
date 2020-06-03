@@ -5,8 +5,6 @@ function generateCredits(credits) {
     creditsArr[i] = creditsArr[i].trim().toLowerCase();
   }
 
-  console.log(creditsArr);
-
   let renderCredits = [];
 
   for (var j = 0; j < creditsArr.length; j++) {

@@ -5,7 +5,6 @@ const generateCredits = require("./credits.js");
 function generateMarkdown(data) {
   let credits = data.credits;
   let links = generateCredits(credits);
-  console.log(links);
 
   return `# ${data.title}
 
