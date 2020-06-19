@@ -22,6 +22,7 @@ ${data.description}
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Future Development](#future-development)
 * [Credits](#Credits)
 * [Tests](#tests)
 * [Questions](#questions)
