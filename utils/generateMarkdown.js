@@ -22,7 +22,7 @@ ${data.description}
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Future Development](#future-development)
+* [Future Enhancements](#future-enhancements)
 * [Credits](#Credits)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -38,8 +38,8 @@ ${data.installation}
 ${data.usage}
 
 
-## Future Development
-${data.development}
+## Future Enhancements
+${data.enhancements}
 
 
 ## Credits

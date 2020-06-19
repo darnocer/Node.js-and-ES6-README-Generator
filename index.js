@@ -22,7 +22,7 @@ const questions = [
   "Usage:",
   "(comma-delimited) Credits:",
   "Tests:",
-  "Enter ideas for Future Development:",
+  "Enter ideas for Future Enhancements:",
   "Enter your license:",
 ];
 
