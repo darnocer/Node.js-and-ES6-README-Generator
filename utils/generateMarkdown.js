@@ -37,6 +37,10 @@ ${data.installation}
 ${data.usage}
 
 
+## Future Development
+${data.development}
+
+
 ## Credits
 
 ${links}

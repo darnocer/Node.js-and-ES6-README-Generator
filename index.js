@@ -14,7 +14,7 @@ const questions = [
   "Enter your full name:",
   "Enter your email:",
   "Enter your Github username:",
-  "Enter the Github repo:",
+  "Enter the name of the Github repo:",
   "Project title:",
   "Deployed page url:",
   "Project description:",
@@ -22,6 +22,7 @@ const questions = [
   "Usage:",
   "(comma-delimited) Credits:",
   "Tests:",
+  "Enter ideas for Future Development:",
   "Enter your license:",
 ];
 
