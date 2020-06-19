@@ -17,9 +17,13 @@ This generator provides the structure and formatting; all you have to provide is
 
 ## Installation
 
-`npm i`
-
-`node index.js`
+```
+Fork repo, clone to machine
+npm i to install packages
+node index.js to run
+Copy "README_.md" file and paste into repo
+Rename file to "README.md"
+```
 
 ## Usage
 
