@@ -24,7 +24,6 @@ ${data.description}
 * [Usage](#usage)
 * [Future Enhancements](#future-enhancements)
 * [Credits](#Credits)
-* [Tests](#tests)
 * [Questions](#questions)
 
 
@@ -45,12 +44,6 @@ ${data.enhancements}
 ## Credits
 
 ${links}
-
-
-
-## Tests
-
-${data.tests}
 
 
 ## Questions?
