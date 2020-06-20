@@ -35,6 +35,7 @@ ${data.installation}
 ## Usage
 
 ${data.usage}
+![demo](Assets/images/demo.gif)
 
 
 ## Future Enhancements
