@@ -8,23 +8,21 @@ function generateCredits(credits) {
   let renderCredits = [];
 
   for (var j = 0; j < creditsArr.length; j++) {
-    if (creditsArr[j] === "inquirer") {
+    let credit = creditsArr[j].toLowerCase();
+    if (credit === "inquirer") {
       renderCredits.push(
         `* [Inquirer](https://www.npmjs.com/package/inquirer)`
       );
-    } else if (creditsArr[j] === "jest") {
+    } else if (credit === "jest") {
       renderCredits.push(`* [Jest](https://jestjs.io/)`);
-    } else if (creditsArr[j] === "bootstrap") {
+    } else if (credit === "bootstrap") {
       renderCredits.push(`* [Bootstrap](https://getbootstrap.com/)`);
-    } else if (
-      creditsArr[j] === "font awesome" ||
-      creditsArr[j] === "fontawesome"
-    ) {
+    } else if (credit === "font awesome" || credit === "fontawesome") {
       renderCredits.push(`* [Font Awesome](https://fontawesome.com/)`);
-    } else if (creditsArr[j] === "moments" || creditsArr[j] === "moments.js") {
+    } else if (credit === "moments" || credit === "moments.js") {
       renderCredits.push(`* [Moments.js](https://momentjs.com/)`);
     } else {
-      renderCredits.push(`* ${creditsArr[j]}`);
+      renderCredits.push(`* ${credit}`);
     }
   }
 
