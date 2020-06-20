@@ -4,7 +4,7 @@ const axios = require("axios");
 const writeToFile = require("write-to-file");
 const emoji = require("node-emoji");
 const markdown = require("./utils/generateMarkdown.js");
-const github = require("./utils/github.js");
+// const github = require("./utils/github.js");
 
 // emojis
 const checkmark = emoji.get("heavy_check_mark");
@@ -21,9 +21,7 @@ const questions = [
   "Installation:",
   "Usage:",
   "(comma-delimited) Credits:",
-  "Tests:",
   "Enter ideas for Future Enhancements:",
-  "Enter your license:",
 ];
 
 let prompts = [];
