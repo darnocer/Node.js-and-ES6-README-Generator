@@ -34,17 +34,18 @@ Rename file to "README.md"
 
 ### Features
 
-- **Credits** - Enter a comma-delimited list of credits. Support to automatically generate links is available for the following libraries/modules: inquirer, bootstrap, jest, font awesome, moments.js
+- **Credits** - Enter a comma-delimited list of credits. Support to automatically generate links is available for the following libraries/modules: inquirer, bootstrap, jest, font awesome, moments.js, express, chalk, fs, mysql
 
 ## Future Enhancements
 
-- Support for more auto-linking of credits (MySQL, shields.io, express.js, fs, Chalk, & more....)
+- Support for more auto-linking of credits
 - save file to specified directory
 - only validate some input and not others
 - restructure inquirer prompt / constructor function for more flexibility
 - Tests
 - Add support for bulleted or ordered lists for certain sections
 - Add ability to add screenshots/demos
+- pull name, email, and photo from github
 
 ## Credits
 
