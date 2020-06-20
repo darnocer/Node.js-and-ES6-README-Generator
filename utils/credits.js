@@ -21,6 +21,18 @@ function generateCredits(credits) {
       renderCredits.push(`* [Font Awesome](https://fontawesome.com/)`);
     } else if (credit === "moments" || credit === "moments.js") {
       renderCredits.push(`* [Moments.js](https://momentjs.com/)`);
+    } else if (credit === "express" || credit === "express.js") {
+      renderCredits.push(
+        `* [Express.js](https://www.npmjs.com/package/express)`
+      );
+    } else if (credit === "mysql") {
+      renderCredits.push(`* [MySQL](https://www.npmjs.com/package/mysql)`);
+    } else if (credit === "chalk") {
+      renderCredits.push(`* [Chalk](https://www.npmjs.com/package/chalk)`);
+    } else if (credit === "fs") {
+      renderCredits.push(
+        `* [file-system](https://www.npmjs.com/package/file-system)`
+      );
     } else {
       renderCredits.push(`* ${credit}`);
     }
