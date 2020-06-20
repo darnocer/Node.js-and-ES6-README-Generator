@@ -16,9 +16,12 @@ function generateCredits(credits) {
       renderCredits.push(`* [Jest](https://jestjs.io/)`);
     } else if (creditsArr[j] === "bootstrap") {
       renderCredits.push(`* [Bootstrap](https://getbootstrap.com/)`);
-    } else if (creditsArr[j] === "font awesome" || "fontawesome") {
+    } else if (
+      creditsArr[j] === "font awesome" ||
+      creditsArr[j] === "fontawesome"
+    ) {
       renderCredits.push(`* [Font Awesome](https://fontawesome.com/)`);
-    } else if (creditsArr[j] === "moments" || "moments.js") {
+    } else if (creditsArr[j] === "moments" || creditsArr[j] === "moments.js") {
       renderCredits.push(`* [Moments.js](https://momentjs.com/)`);
     } else {
       renderCredits.push(`* ${creditsArr[j]}`);
